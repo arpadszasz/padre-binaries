@@ -1,11 +1,11 @@
-*** lib/Wx/Perl/Packager/Linux.pm	2014-08-09 00:09:57.340642138 +0300
---- lib/Wx/Perl/Packager/Linux.pm.bak	2014-08-09 00:07:25.924639866 +0300
+*** ./site/lib/Wx/Perl/Packager/Linux.pm.bak	2014-08-09 00:07:25.924639866 +0300
+--- ./site/lib/Wx/Perl/Packager/Linux.pm	2014-08-11 13:59:45.944051158 +0300
 *************** sub config_modules {
 *** 39,45 ****
   sub config_system {
       my $self = shift;
       
-!     $self->set_so_module_suffix('.4.0.0'); # different linux dists symlink the .so libraries differently
+!     $self->set_so_module_suffix('.0'); # different linux dists symlink the .so libraries differently
                                        # BAH. the loaders in Wx::Perl::Packager will look for
                                        # modules ending in '.so'  - If your modules get packaged
                                        # differently, put the suffix here.
@@ -13,7 +13,7 @@
   sub config_system {
       my $self = shift;
       
-!     $self->set_so_module_suffix('.0'); # different linux dists symlink the .so libraries differently
+!     $self->set_so_module_suffix('.4'); # different linux dists symlink the .so libraries differently
                                        # BAH. the loaders in Wx::Perl::Packager will look for
                                        # modules ending in '.so'  - If your modules get packaged
                                        # differently, put the suffix here.

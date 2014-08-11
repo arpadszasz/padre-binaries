@@ -1,0 +1,36 @@
+*** lib/Config_heavy.pl	2014-08-08 20:35:18.476448889 +0300
+--- lib/Config_heavy.pl.bak	2014-08-08 20:32:50.800446673 +0300
+*************** config_arg5='-Uinstallusrbinperl'
+*** 248,254 ****
+  config_arg6='-Ulocincpth='
+  config_arg7='-Uloclibpth='
+  config_arg8='-Duse64bitall'
+! config_arg9='-Dlibpth=/lib64 /usr/lib64 /usr/local/lib64 /usr/lib/x86_64-linux-gnu'
+  config_argc='24'
+  config_args='-ders -Dcc=gcc -Dusethreads -Duseithreads -Uinstallusrbinperl -Ulocincpth= -Uloclibpth= -Duse64bitall -Dlibpth=/lib64 /usr/lib64 /usr/local/lib64 -Accflags=-DUSE_SITECUSTOMIZE -Duselargefiles -Accflags=-DPERL_RELOCATABLE_INCPUSH -Accflags=-fno-merge-constants -Dprefix=/home/arpi/.local/opt/ActivePerl-5.16 -Dprivlib=/home/arpi/.local/opt/ActivePerl-5.16/lib -Darchlib=/home/arpi/.local/opt/ActivePerl-5.16/lib -Dsiteprefix=/home/arpi/.local/opt/ActivePerl-5.16/site -Dsitelib=/home/arpi/.local/opt/ActivePerl-5.16/site/lib -Dsitearch=/home/arpi/.local/opt/ActivePerl-5.16/site/lib -Dsed=/bin/sed -Duseshrplib -Dcf_by=ActiveState -Dcf_email=support@ActiveState.com'
+  config_heavy='Config_heavy.pl'
+--- 248,254 ----
+  config_arg6='-Ulocincpth='
+  config_arg7='-Uloclibpth='
+  config_arg8='-Duse64bitall'
+! config_arg9='-Dlibpth=/lib64 /usr/lib64 /usr/local/lib64'
+  config_argc='24'
+  config_args='-ders -Dcc=gcc -Dusethreads -Duseithreads -Uinstallusrbinperl -Ulocincpth= -Uloclibpth= -Duse64bitall -Dlibpth=/lib64 /usr/lib64 /usr/local/lib64 -Accflags=-DUSE_SITECUSTOMIZE -Duselargefiles -Accflags=-DPERL_RELOCATABLE_INCPUSH -Accflags=-fno-merge-constants -Dprefix=/home/arpi/.local/opt/ActivePerl-5.16 -Dprivlib=/home/arpi/.local/opt/ActivePerl-5.16/lib -Darchlib=/home/arpi/.local/opt/ActivePerl-5.16/lib -Dsiteprefix=/home/arpi/.local/opt/ActivePerl-5.16/site -Dsitelib=/home/arpi/.local/opt/ActivePerl-5.16/site/lib -Dsitearch=/home/arpi/.local/opt/ActivePerl-5.16/site/lib -Dsed=/bin/sed -Duseshrplib -Dcf_by=ActiveState -Dcf_email=support@ActiveState.com'
+  config_heavy='Config_heavy.pl'
+*************** lib_ext='.a'
+*** 959,965 ****
+  libc='/lib/libc-2.3.5.so'
+  libdb_needs_pthread='N'
+  libperl='libperl.so'
+! libpth='/lib64 /usr/lib64 /usr/local/lib64 /usr/lib/x86_64-linux-gnu'
+  libs='-lnsl -lgdbm -ldb -ldl -lm -lcrypt -lutil -lpthread -lc'
+  libsdirs=' /usr/lib64'
+  libsfiles=' libnsl.so libgdbm.so libdb.so libdl.so libm.so libcrypt.so libutil.so libpthread.so libc.so'
+--- 959,965 ----
+  libc='/lib/libc-2.3.5.so'
+  libdb_needs_pthread='N'
+  libperl='libperl.so'
+! libpth='/lib64 /usr/lib64 /usr/local/lib64'
+  libs='-lnsl -lgdbm -ldb -ldl -lm -lcrypt -lutil -lpthread -lc'
+  libsdirs=' /usr/lib64'
+  libsfiles=' libnsl.so libgdbm.so libdb.so libdl.so libm.so libcrypt.so libutil.so libpthread.so libc.so'

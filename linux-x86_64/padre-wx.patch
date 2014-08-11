@@ -1,13 +1,13 @@
-*** lib/Padre/Wx.pm	2014-08-10 21:21:31.184136146 +0300
---- lib/Padre/Wx.pm.bak	2014-08-09 00:36:31.412666057 +0300
-*************** use Padre::Current  ();
-*** 14,21 ****
-  use threads;
-  use threads::shared;
+*** site/lib/Padre/Wx.pm.bak	2014-08-09 00:36:31.412666057 +0300
+--- site/lib/Padre/Wx.pm	2014-08-11 16:36:22.128527146 +0300
+*************** use Wx::Event  (':everything');
+*** 22,27 ****
+--- 22,29 ----
+  use Wx::AUI    ();
+  use Wx::Socket ();
   
-- use Wx::Perl::Packager;
-- 
-  # Load every exportable constant into here, so that they come into
-  # existence in the Wx:: packages, allowing everywhere else in the code to
-  # use them without braces.
---- 14,19 ----
++ Wx::DisableAssertHandler();
++ 
+  our $VERSION    = '1.00';
+  our $COMPATIBLE = '0.43';
+  

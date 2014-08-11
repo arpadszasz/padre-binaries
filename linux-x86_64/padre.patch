@@ -1,0 +1,16 @@
+*** ./site/bin/padre.bak	2014-08-08 23:41:20.532616377 +0300
+--- ./site/bin/padre	2014-08-11 14:35:27.184083288 +0300
+*************** use Carp ();
+*** 10,15 ****
+--- 10,20 ----
+  
+  our $VERSION = '1.00';
+  
++ use threads;
++ use threads::shared;
++ 
++ use Wx::Perl::Packager;
++ 
+  use constant WIN32 => !!( $^O eq 'MSWin32' and $^X =~ /wperl\.exe/ );
+  
+  local $| = 1;

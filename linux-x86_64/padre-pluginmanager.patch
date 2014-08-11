@@ -1,0 +1,31 @@
+*** site/lib/Padre/PluginManager.pm.bak	2014-08-11 15:34:44.144142659 +0300
+--- site/lib/Padre/PluginManager.pm	2014-08-11 16:01:54.256496118 +0300
+*************** sub reset_my_plugin {
+*** 227,236 ****
+  	}
+  
+  	# Find the My Plug-in
+! 	my $src = File::Spec->catfile(
+! 		File::Basename::dirname( $INC{'Padre/Config.pm'} ),
+! 		'Plugin', 'My.pm',
+! 	);
+  	unless ( -e $src ) {
+  		Carp::croak("Could not find the original My plug-in");
+  	}
+--- 227,242 ----
+  	}
+  
+  	# Find the My Plug-in
+! 	my $src;
+!     if ($PerlApp::VERSION) {
+! 	    $src = PerlApp::extract_bound_file('Padre/Plugin/My.pm');
+!     }
+!     else {
+!         File::Spec->catfile(
+!             File::Basename::dirname( $INC{'Padre/Config.pm'} ),
+!             'Plugin', 'My.pm',
+!         );
+!     }
+  	unless ( -e $src ) {
+  		Carp::croak("Could not find the original My plug-in");
+  	}
