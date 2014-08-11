@@ -1,0 +1,53 @@
+*** lib/Config_heavy.pl.bak	2014-08-11 18:11:30.065276749 +0300
+--- lib/Config_heavy.pl	2014-08-11 18:22:34.994695558 +0300
+*************** gidformat='"lu"'
+*** 792,798 ****
+  gidsign='1'
+  gidsize='4'
+  gidtype='gid_t'
+! glibpth='/usr/shlib  /lib /usr/lib /usr/lib/386 /lib/386 /usr/ccs/lib /usr/ucblib /usr/local/lib '
+  gmake='gmake'
+  gmtime_r_proto='REENTRANT_PROTO_S_TS'
+  gnulibc_version='2.3.6'
+--- 792,798 ----
+  gidsign='1'
+  gidsize='4'
+  gidtype='gid_t'
+! glibpth='/usr/shlib  /lib /usr/lib /usr/lib/386 /lib/386 /usr/ccs/lib /usr/ucblib /usr/local/lib /usr/lib/i386-linux-gnu '
+  gmake='gmake'
+  gmtime_r_proto='REENTRANT_PROTO_S_TS'
+  gnulibc_version='2.3.6'
+*************** lib_ext='.a'
+*** 957,963 ****
+  libc='/lib/libc-2.3.6.so'
+  libdb_needs_pthread='N'
+  libperl='libperl.so'
+! libpth='/lib /usr/lib /usr/local/lib'
+  libs='-lnsl -lgdbm -ldb -ldl -lm -lcrypt -lutil -lpthread -lc'
+  libsdirs=' /usr/lib'
+  libsfiles=' libnsl.so libgdbm.so libdb.so libdl.so libm.so libcrypt.so libutil.so libpthread.so libc.so'
+--- 957,963 ----
+  libc='/lib/libc-2.3.6.so'
+  libdb_needs_pthread='N'
+  libperl='libperl.so'
+! libpth='/lib /usr/lib /usr/local/lib /usr/lib/i386-linux-gnu'
+  libs='-lnsl -lgdbm -ldb -ldl -lm -lcrypt -lutil -lpthread -lc'
+  libsdirs=' /usr/lib'
+  libsfiles=' libnsl.so libgdbm.so libdb.so libdl.so libm.so libcrypt.so libutil.so libpthread.so libc.so'
+*************** perlpath='/home/arpi/.local/opt/ActivePe
+*** 1054,1060 ****
+  pg='pg'
+  phostname='hostname'
+  pidtype='pid_t'
+! plibpth='/lib/i386-redhat-linux/4.0.2 /lib /usr/lib/i386-redhat-linux/4.0.2 /usr/lib'
+  pmake=''
+  pr=''
+  prefix='/home/arpi/.local/opt/ActivePerl-5.16'
+--- 1054,1060 ----
+  pg='pg'
+  phostname='hostname'
+  pidtype='pid_t'
+! plibpth='/lib/i386-redhat-linux/4.0.2 /lib /usr/lib/i386-redhat-linux/4.0.2 /usr/lib /usr/lib/i386-linux-gnu'
+  pmake=''
+  pr=''
+  prefix='/home/arpi/.local/opt/ActivePerl-5.16'
